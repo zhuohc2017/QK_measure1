@@ -1,0 +1,247 @@
+Dependencies for Project 'QKMM_NANO100', Target 'QK_MM': (DO NOT MODIFY !)
+F (.\CMSIS\startup_Nano100Series.s)(0x57BA8FAC)(--cpu Cortex-M0 -g --apcs=interwork -I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 514"--list .\listings\startup_nano100series.lst --xref -o .\objects\startup_nano100series.o --depend .\objects\startup_nano100series.d)
+F (.\CMSIS\system_Nano100Series.c)(0x57BA8FAC)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\system_nano100series.o --omf_browse .\objects\system_nano100series.crf --depend .\objects\system_nano100series.d)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (.\inc\Nano100Series.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cm0.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cmInstr.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\cmsis_armcc.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cmFunc.h)(0x57BA8FAC)
+I (.\inc\system_Nano100Series.h)(0x57BA8FAC)
+I (.\inc\sys.h)(0x57BA8FAC)
+I (.\inc\clk.h)(0x57BA8FAC)
+I (.\inc\adc.h)(0x57BA8FAC)
+I (.\inc\dac.h)(0x57BA8FAC)
+I (.\inc\fmc.h)(0x57BA8FAC)
+I (.\inc\ebi.h)(0x57BA8FAC)
+I (.\inc\gpio.h)(0x57BA8FAC)
+I (.\inc\i2c.h)(0x57BA8FAC)
+I (.\inc\crc.h)(0x57BA8FAC)
+I (.\inc\pdma.h)(0x57BA8FAC)
+I (.\inc\pwm.h)(0x57BA8FAC)
+I (.\inc\rtc.h)(0x57BA8FAC)
+I (.\inc\sc.h)(0x57BA8FAC)
+I (.\inc\scuart.h)(0x57BA8FAC)
+I (.\inc\spi.h)(0x57BA8FAC)
+I (.\inc\timer.h)(0x57BA8FAC)
+I (.\inc\uart.h)(0x57BA8FAC)
+I (.\inc\usbd.h)(0x57BA8FAC)
+I (.\inc\wdt.h)(0x57BA8FAC)
+I (.\inc\wwdt.h)(0x57BA8FAC)
+I (.\inc\i2s.h)(0x57BA8FAC)
+I (.\inc\lcd.h)(0x57BA8FAC)
+F (.\src\clk.c)(0x57BA8FAC)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\clk.o --omf_browse .\objects\clk.crf --depend .\objects\clk.d)
+I (.\inc\Nano100Series.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cm0.h)(0x57BA8FAC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (.\inc\cmsis_inc\core_cmInstr.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\cmsis_armcc.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cmFunc.h)(0x57BA8FAC)
+I (.\inc\system_Nano100Series.h)(0x57BA8FAC)
+I (.\inc\sys.h)(0x57BA8FAC)
+I (.\inc\clk.h)(0x57BA8FAC)
+I (.\inc\adc.h)(0x57BA8FAC)
+I (.\inc\dac.h)(0x57BA8FAC)
+I (.\inc\fmc.h)(0x57BA8FAC)
+I (.\inc\ebi.h)(0x57BA8FAC)
+I (.\inc\gpio.h)(0x57BA8FAC)
+I (.\inc\i2c.h)(0x57BA8FAC)
+I (.\inc\crc.h)(0x57BA8FAC)
+I (.\inc\pdma.h)(0x57BA8FAC)
+I (.\inc\pwm.h)(0x57BA8FAC)
+I (.\inc\rtc.h)(0x57BA8FAC)
+I (.\inc\sc.h)(0x57BA8FAC)
+I (.\inc\scuart.h)(0x57BA8FAC)
+I (.\inc\spi.h)(0x57BA8FAC)
+I (.\inc\timer.h)(0x57BA8FAC)
+I (.\inc\uart.h)(0x57BA8FAC)
+I (.\inc\usbd.h)(0x57BA8FAC)
+I (.\inc\wdt.h)(0x57BA8FAC)
+I (.\inc\wwdt.h)(0x57BA8FAC)
+I (.\inc\i2s.h)(0x57BA8FAC)
+I (.\inc\lcd.h)(0x57BA8FAC)
+F (.\src\sys.c)(0x57BA8FAC)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\sys.o --omf_browse .\objects\sys.crf --depend .\objects\sys.d)
+I (.\inc\Nano100Series.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cm0.h)(0x57BA8FAC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (.\inc\cmsis_inc\core_cmInstr.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\cmsis_armcc.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cmFunc.h)(0x57BA8FAC)
+I (.\inc\system_Nano100Series.h)(0x57BA8FAC)
+I (.\inc\sys.h)(0x57BA8FAC)
+I (.\inc\clk.h)(0x57BA8FAC)
+I (.\inc\adc.h)(0x57BA8FAC)
+I (.\inc\dac.h)(0x57BA8FAC)
+I (.\inc\fmc.h)(0x57BA8FAC)
+I (.\inc\ebi.h)(0x57BA8FAC)
+I (.\inc\gpio.h)(0x57BA8FAC)
+I (.\inc\i2c.h)(0x57BA8FAC)
+I (.\inc\crc.h)(0x57BA8FAC)
+I (.\inc\pdma.h)(0x57BA8FAC)
+I (.\inc\pwm.h)(0x57BA8FAC)
+I (.\inc\rtc.h)(0x57BA8FAC)
+I (.\inc\sc.h)(0x57BA8FAC)
+I (.\inc\scuart.h)(0x57BA8FAC)
+I (.\inc\spi.h)(0x57BA8FAC)
+I (.\inc\timer.h)(0x57BA8FAC)
+I (.\inc\uart.h)(0x57BA8FAC)
+I (.\inc\usbd.h)(0x57BA8FAC)
+I (.\inc\wdt.h)(0x57BA8FAC)
+I (.\inc\wwdt.h)(0x57BA8FAC)
+I (.\inc\i2s.h)(0x57BA8FAC)
+I (.\inc\lcd.h)(0x57BA8FAC)
+F (.\src\uart.c)(0x57BA8FAC)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (.\inc\Nano100Series.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cm0.h)(0x57BA8FAC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (.\inc\cmsis_inc\core_cmInstr.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\cmsis_armcc.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cmFunc.h)(0x57BA8FAC)
+I (.\inc\system_Nano100Series.h)(0x57BA8FAC)
+I (.\inc\sys.h)(0x57BA8FAC)
+I (.\inc\clk.h)(0x57BA8FAC)
+I (.\inc\adc.h)(0x57BA8FAC)
+I (.\inc\dac.h)(0x57BA8FAC)
+I (.\inc\fmc.h)(0x57BA8FAC)
+I (.\inc\ebi.h)(0x57BA8FAC)
+I (.\inc\gpio.h)(0x57BA8FAC)
+I (.\inc\i2c.h)(0x57BA8FAC)
+I (.\inc\crc.h)(0x57BA8FAC)
+I (.\inc\pdma.h)(0x57BA8FAC)
+I (.\inc\pwm.h)(0x57BA8FAC)
+I (.\inc\rtc.h)(0x57BA8FAC)
+I (.\inc\sc.h)(0x57BA8FAC)
+I (.\inc\scuart.h)(0x57BA8FAC)
+I (.\inc\spi.h)(0x57BA8FAC)
+I (.\inc\timer.h)(0x57BA8FAC)
+I (.\inc\uart.h)(0x57BA8FAC)
+I (.\inc\usbd.h)(0x57BA8FAC)
+I (.\inc\wdt.h)(0x57BA8FAC)
+I (.\inc\wwdt.h)(0x57BA8FAC)
+I (.\inc\i2s.h)(0x57BA8FAC)
+I (.\inc\lcd.h)(0x57BA8FAC)
+F (.\src\retarget.c)(0x57BA8FAC)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\retarget.o --omf_browse .\objects\retarget.crf --depend .\objects\retarget.d)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (.\inc\Nano100Series.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cm0.h)(0x57BA8FAC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (.\inc\cmsis_inc\core_cmInstr.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\cmsis_armcc.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cmFunc.h)(0x57BA8FAC)
+I (.\inc\system_Nano100Series.h)(0x57BA8FAC)
+I (.\inc\sys.h)(0x57BA8FAC)
+I (.\inc\clk.h)(0x57BA8FAC)
+I (.\inc\adc.h)(0x57BA8FAC)
+I (.\inc\dac.h)(0x57BA8FAC)
+I (.\inc\fmc.h)(0x57BA8FAC)
+I (.\inc\ebi.h)(0x57BA8FAC)
+I (.\inc\gpio.h)(0x57BA8FAC)
+I (.\inc\i2c.h)(0x57BA8FAC)
+I (.\inc\crc.h)(0x57BA8FAC)
+I (.\inc\pdma.h)(0x57BA8FAC)
+I (.\inc\pwm.h)(0x57BA8FAC)
+I (.\inc\rtc.h)(0x57BA8FAC)
+I (.\inc\sc.h)(0x57BA8FAC)
+I (.\inc\scuart.h)(0x57BA8FAC)
+I (.\inc\spi.h)(0x57BA8FAC)
+I (.\inc\timer.h)(0x57BA8FAC)
+I (.\inc\uart.h)(0x57BA8FAC)
+I (.\inc\usbd.h)(0x57BA8FAC)
+I (.\inc\wdt.h)(0x57BA8FAC)
+I (.\inc\wwdt.h)(0x57BA8FAC)
+I (.\inc\i2s.h)(0x57BA8FAC)
+I (.\inc\lcd.h)(0x57BA8FAC)
+F (.\src\gpio.c)(0x57BA8FAC)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (.\inc\Nano100Series.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cm0.h)(0x57BA8FAC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (.\inc\cmsis_inc\core_cmInstr.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\cmsis_armcc.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cmFunc.h)(0x57BA8FAC)
+I (.\inc\system_Nano100Series.h)(0x57BA8FAC)
+I (.\inc\sys.h)(0x57BA8FAC)
+I (.\inc\clk.h)(0x57BA8FAC)
+I (.\inc\adc.h)(0x57BA8FAC)
+I (.\inc\dac.h)(0x57BA8FAC)
+I (.\inc\fmc.h)(0x57BA8FAC)
+I (.\inc\ebi.h)(0x57BA8FAC)
+I (.\inc\gpio.h)(0x57BA8FAC)
+I (.\inc\i2c.h)(0x57BA8FAC)
+I (.\inc\crc.h)(0x57BA8FAC)
+I (.\inc\pdma.h)(0x57BA8FAC)
+I (.\inc\pwm.h)(0x57BA8FAC)
+I (.\inc\rtc.h)(0x57BA8FAC)
+I (.\inc\sc.h)(0x57BA8FAC)
+I (.\inc\scuart.h)(0x57BA8FAC)
+I (.\inc\spi.h)(0x57BA8FAC)
+I (.\inc\timer.h)(0x57BA8FAC)
+I (.\inc\uart.h)(0x57BA8FAC)
+I (.\inc\usbd.h)(0x57BA8FAC)
+I (.\inc\wdt.h)(0x57BA8FAC)
+I (.\inc\wwdt.h)(0x57BA8FAC)
+I (.\inc\i2s.h)(0x57BA8FAC)
+I (.\inc\lcd.h)(0x57BA8FAC)
+F (.\user\main.c)(0x58745401)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (.\inc\platform.h)(0x58746FA6)
+I (.\inc\Nano100Series.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cm0.h)(0x57BA8FAC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (.\inc\cmsis_inc\core_cmInstr.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\cmsis_armcc.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cmFunc.h)(0x57BA8FAC)
+I (.\inc\system_Nano100Series.h)(0x57BA8FAC)
+I (.\inc\sys.h)(0x57BA8FAC)
+I (.\inc\clk.h)(0x57BA8FAC)
+I (.\inc\adc.h)(0x57BA8FAC)
+I (.\inc\dac.h)(0x57BA8FAC)
+I (.\inc\fmc.h)(0x57BA8FAC)
+I (.\inc\ebi.h)(0x57BA8FAC)
+I (.\inc\gpio.h)(0x57BA8FAC)
+I (.\inc\i2c.h)(0x57BA8FAC)
+I (.\inc\crc.h)(0x57BA8FAC)
+I (.\inc\pdma.h)(0x57BA8FAC)
+I (.\inc\pwm.h)(0x57BA8FAC)
+I (.\inc\rtc.h)(0x57BA8FAC)
+I (.\inc\sc.h)(0x57BA8FAC)
+I (.\inc\scuart.h)(0x57BA8FAC)
+I (.\inc\spi.h)(0x57BA8FAC)
+I (.\inc\timer.h)(0x57BA8FAC)
+I (.\inc\uart.h)(0x57BA8FAC)
+I (.\inc\usbd.h)(0x57BA8FAC)
+I (.\inc\wdt.h)(0x57BA8FAC)
+I (.\inc\wwdt.h)(0x57BA8FAC)
+I (.\inc\i2s.h)(0x57BA8FAC)
+I (.\inc\lcd.h)(0x57BA8FAC)
+F (.\src\platform.c)(0x587484F6)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\platform.o --omf_browse .\objects\platform.crf --depend .\objects\platform.d)
+I (.\inc\platform.h)(0x58746FA6)
+I (.\inc\Nano100Series.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cm0.h)(0x57BA8FAC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (.\inc\cmsis_inc\core_cmInstr.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\cmsis_armcc.h)(0x57BA8FAC)
+I (.\inc\cmsis_inc\core_cmFunc.h)(0x57BA8FAC)
+I (.\inc\system_Nano100Series.h)(0x57BA8FAC)
+I (.\inc\sys.h)(0x57BA8FAC)
+I (.\inc\clk.h)(0x57BA8FAC)
+I (.\inc\adc.h)(0x57BA8FAC)
+I (.\inc\dac.h)(0x57BA8FAC)
+I (.\inc\fmc.h)(0x57BA8FAC)
+I (.\inc\ebi.h)(0x57BA8FAC)
+I (.\inc\gpio.h)(0x57BA8FAC)
+I (.\inc\i2c.h)(0x57BA8FAC)
+I (.\inc\crc.h)(0x57BA8FAC)
+I (.\inc\pdma.h)(0x57BA8FAC)
+I (.\inc\pwm.h)(0x57BA8FAC)
+I (.\inc\rtc.h)(0x57BA8FAC)
+I (.\inc\sc.h)(0x57BA8FAC)
+I (.\inc\scuart.h)(0x57BA8FAC)
+I (.\inc\spi.h)(0x57BA8FAC)
+I (.\inc\timer.h)(0x57BA8FAC)
+I (.\inc\uart.h)(0x57BA8FAC)
+I (.\inc\usbd.h)(0x57BA8FAC)
+I (.\inc\wdt.h)(0x57BA8FAC)
+I (.\inc\wwdt.h)(0x57BA8FAC)
+I (.\inc\i2s.h)(0x57BA8FAC)
+I (.\inc\lcd.h)(0x57BA8FAC)
