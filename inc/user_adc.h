@@ -8,6 +8,7 @@ uint8_t ADC_convert (uint32_t* value);
 
 uint8_t power_ADC_convert (uint32_t* value);
 
+uint8_t IRsensor_ADC_convert (uint16_t* value);
 #endif
 
 

@@ -15,7 +15,7 @@ uint8_t  Self_test_flag = 0;
 uint16_t Self_sensor_flag = 0;
 
 uint8_t ERR_Com[32];//传感器测量误差补偿
-
+uint8_t IR_co[8];
 void Sensorwrite(uint8_t *Txbuffer,uint8_t len) 
 {
 	UART_Write(UART0,Txbuffer,len);
@@ -35,6 +35,62 @@ void Execute_Cmd(uint8_t *cmd)
 	}
 	switch(cmd[0])
 	{
+		case 0x01://01 xx 1d 0d 读红外传感器电压电压值；
+		{
+			uint16_t p_battery[5]={0};
+			uint8_t rtn[8]={0};
+			uint8_t No = BLE_usart.receivebuf[1];
+		
+			if(BLE_usart.receivebuf[1]>4|| BLE_usart.receivebuf[1]<1)
+			{
+				error_handle();
+					break;
+			}
+			else
+			{
+				start_handle();
+				IRsensor_ADC_convert(p_battery);
+				rtn[0] = 0x01;
+				rtn[1] = No;
+				rtn[2] = p_battery[No]/100+0x30;
+				rtn[3] = '.';
+				rtn[4] = p_battery[No]%100/10+0x30;
+				rtn[5] = p_battery[No]%10+0x30;
+				rtn[6] = 'V';
+				rtn[7] = 0x24;
+				Delay(1000);
+				Blewrite(rtn,8);
+				Delay(500);
+				BLE_usart.reset();
+				end_handle();
+			}
+		}
+		break;
+		case 0x02:  //误差补偿
+		{
+			uint8_t i = 0,rtn[2]={0};
+			if(BLE_usart.receivebuf[4] != 0x1d||BLE_usart.receivebuf[5] != 0x0d)
+			{
+				for(i = 0;i < SIZE_LEN;i++)
+				{
+						BLE_usart.receivebuf[i] =  0;
+				}
+				error_handle();
+				break;
+			}
+			 start_handle();
+			 Delay(1000);
+			 set_IR((uint8_t*)&BLE_usart.receivebuf[1]);
+			 for(i = 0;i<SIZE_LEN;i++)
+			 {
+				 BLE_usart.receivebuf[i] = 0;
+			 }
+			 rtn[0] = 0x02;
+			 rtn[1] = 0x24;
+			 Blewrite(rtn,2);
+			 end_handle();
+		}
+		break;
 		case 0x11:
 		{
 				uint8_t num_of_sensor = BLE_usart.receivebuf[1];   //蓝牙接收到的传感器编号
@@ -55,9 +111,9 @@ void Execute_Cmd(uint8_t *cmd)
 				SENSOR_usart.reset();                   //清buf计数
 				Delay(10);
 				Sensorwrite(cmd_one_measure,4);
-				Delay(10);
+				Delay(500);
 				time_out = 0;
-				while(time_out < 2500)
+				while(time_out < 4000)
 				{
 					SENSOR_usart_service();
 					if(SENSOR_usart.flag_complete==1)
@@ -994,6 +1050,7 @@ void Execute_Cmd(uint8_t *cmd)
 			power_on(3);
 			for(i=0;i<0x10;i++)
 			{
+				WDT_RESET_COUNTER();
 				usart_receive_1_16_ctrl(i);
 				
 				Delay(100);
@@ -1258,6 +1315,9 @@ void Self_test()
 		MEASURE_TIMEOUT=2500;
 	}
 	SPI_Flash_ReadBuffer(ERR_Com,0x7FE006,32);
+	
+	SPI_Flash_ReadBuffer(IR_co,0x7FD000,8);
+	
 	Delay(100);
 	ADC_convert(bat);
 
@@ -1281,82 +1341,82 @@ void Self_test()
 			Self_test_flag+=4;
 		}
 	}
-//	if(Self_test_flag<=0)
-//	{
-//			uint16_t i= 0;
-//			uint16_t num_a = 0;
-//			uint8_t read_state[4] = {80,0x06,0x09,71};
-//			for(i = 0;i < 16;i++)
-//			{
-//				if(i==0)
-//				{
-//					power_on(0);
-//					Delay(self_test_power_on_delay);
-//				}
-//				else if(i==4)
-//				{
-//					power_off(0);
-//					power_on(1);
-//					Delay(self_test_power_on_delay);
-//				}
-//				else if(i==8)
-//				{
-//					power_off(1);
-//					power_on(2);
-//					Delay(self_test_power_on_delay);
-//				}
-//				else if(i==12)
-//				{
-//					power_off(2);
-//					power_on(3);
-//					Delay(self_test_power_on_delay);
-//				}
-//				usart_receive_1_16_ctrl(i);
-//				Delay(10);
-//				read_state[0] = 0x80;
-//				read_state[3] = 0x71;
-//				SENSOR_usart.reset(); 
-//				Sensorwrite(read_state,4);
-//				Delay(200);
-//				//如果没有测量结果，继续发送测量命令
-//				num_a = 0;
-//				 while(num_a <= 900)
-//				 {
-//					 SENSOR_usart_service();
-//					 if(SENSOR_usart.flag_complete==1)
-//					 {
-//						 if(SENSOR_usart.receive_cnt == 5)
-//						 {
-//							 SENSOR_usart.receive_cnt = 0;
-//							 num_a = 0;
-//							 break;
-//						 }
-//					 }
-//					 else if(num_a!=0&&num_a%300 == 0)
-//					 {
-//						 SENSOR_usart.reset(); 
-//						 Sensorwrite(read_state,4);
-//						 Delay(100);
-//					 }
-//					 num_a++;
-//					 Delay(10);
-//				 }
-//				 //清除
-//				 SENSOR_usart.receive_cnt = 0;
-//				 SENSOR_usart.flag_complete = 0;
-//				 
-//				 if(num_a>900 || (SENSOR_usart.receivebuf[2]==0x85&&SENSOR_usart.receivebuf[3]!=0))
-//				 {
-//					 Self_sensor_flag = Self_sensor_flag + ((uint16_t)1<<i);
-//					 //break;
-//				 }
-//			}
-//			power_off(3);
-//			for(i = 0;i < SIZE_LEN; i++)
-//			{
-//				SENSOR_usart.receivebuf[i]=0;
-//			}
-//	}
+	if(Self_test_flag<=0)
+	{
+			uint16_t i= 0;
+			uint16_t num_a = 0;
+			uint8_t read_state[4] = {80,0x06,0x09,71};
+			for(i = 0;i < 16;i++)
+			{
+				if(i==0)
+				{
+					power_on(0);
+					Delay(self_test_power_on_delay);
+				}
+				else if(i==4)
+				{
+					power_off(0);
+					power_on(1);
+					Delay(self_test_power_on_delay);
+				}
+				else if(i==8)
+				{
+					power_off(1);
+					power_on(2);
+					Delay(self_test_power_on_delay);
+				}
+				else if(i==12)
+				{
+					power_off(2);
+					power_on(3);
+					Delay(self_test_power_on_delay);
+				}
+				usart_receive_1_16_ctrl(i);
+				Delay(10);
+				read_state[0] = 0x80;
+				read_state[3] = 0x71;
+				SENSOR_usart.reset(); 
+				Sensorwrite(read_state,4);
+				Delay(200);
+				//如果没有测量结果，继续发送测量命令
+				num_a = 0;
+				 while(num_a <= 900)
+				 {
+					 SENSOR_usart_service();
+					 if(SENSOR_usart.flag_complete==1)
+					 {
+						 if(SENSOR_usart.receive_cnt == 5)
+						 {
+							 SENSOR_usart.receive_cnt = 0;
+							 num_a = 0;
+							 break;
+						 }
+					 }
+					 else if(num_a!=0&&num_a%300 == 0)
+					 {
+						 SENSOR_usart.reset(); 
+						 Sensorwrite(read_state,4);
+						 Delay(100);
+					 }
+					 num_a++;
+					 Delay(10);
+				 }
+				 //清除
+				 SENSOR_usart.receive_cnt = 0;
+				 SENSOR_usart.flag_complete = 0;
+				 
+				 if(num_a>900 || (SENSOR_usart.receivebuf[2]==0x85&&SENSOR_usart.receivebuf[3]!=0))
+				 {
+					 Self_sensor_flag = Self_sensor_flag + ((uint16_t)1<<i);
+					 //break;
+				 }
+			}
+			power_off(3);
+			for(i = 0;i < SIZE_LEN; i++)
+			{
+				SENSOR_usart.receivebuf[i]=0;
+			}
+	}
 	if(Self_test_flag<=0)
 	{
 		BT_RST_Pin = 0;

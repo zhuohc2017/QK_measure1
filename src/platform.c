@@ -17,6 +17,7 @@ extern uint8_t  flag_wakeup;
 extern uint8_t  flag_con_discon;
 
 extern uint8_t ERR_Com[32];
+extern uint8_t IR_co[8];
 /* Global variables */
 __IO int32_t   _Wakeup_Flag = 0;    /* 1 indicates system wake up from power down mode */
 __IO uint32_t  _Pin_Setting[11];    /* store Px_H_MFP and Px_L_MFP */
@@ -217,7 +218,20 @@ uint8_t set_err(uint8_t *err)
 }
 
 
-
+uint8_t set_IR(uint8_t *IR)
+{
+	uint8_t ir_temp[8]={0};
+	SPI_Flash_ReadBuffer(ir_temp,0x7FD000,8);
+	Delay(100);
+	W25QXX_Erase_Sector(0x7FD);  
+	Delay(1000);
+	ir_temp[2*(IR[0]-1)] = IR[1];
+	ir_temp[2*(IR[0]-1)+1] = IR[2];
+	SPI_Flash_Writebuffer(ir_temp,0x7FD000,8);
+	Delay(100);
+	SPI_Flash_ReadBuffer(IR_co,0x7FD000,8);
+	Delay(100);
+}
 void SYS_Init(void)
 {
     /*---------------------------------------------------------------------------------------------------------*/

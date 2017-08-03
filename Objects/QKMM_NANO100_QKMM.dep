@@ -30,8 +30,8 @@ I (.\inc\wdt.h)(0x57BA8FAC)
 I (.\inc\wwdt.h)(0x57BA8FAC)
 I (.\inc\i2s.h)(0x57BA8FAC)
 I (.\inc\lcd.h)(0x57BA8FAC)
-F (.\src\platform.c)(0x591E4DC7)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\platform.o --omf_browse .\objects\platform.crf --depend .\objects\platform.d)
-I (.\inc\platform.h)(0x58B8DFFD)
+F (.\src\platform.c)(0x5982BA59)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\platform.o --omf_browse .\objects\platform.crf --depend .\objects\platform.d)
+I (.\inc\platform.h)(0x59829701)
 I (.\inc\Nano100Series.h)(0x57BA8FAC)
 I (.\inc\cmsis_inc\core_cm0.h)(0x57BA8FAC)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -62,7 +62,7 @@ I (.\inc\wwdt.h)(0x57BA8FAC)
 I (.\inc\i2s.h)(0x57BA8FAC)
 I (.\inc\lcd.h)(0x57BA8FAC)
 I (.\inc\user_usart.h)(0x58F5AA0F)
-I (.\inc\user_adc.h)(0x58BD15D7)
+I (.\inc\user_adc.h)(0x59819EF5)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
 I (.\inc\w25q64.h)(0x587C7D06)
 I (.\inc\user_spi.h)(0x587C7EE2)
@@ -162,8 +162,8 @@ I (.\inc\wdt.h)(0x57BA8FAC)
 I (.\inc\wwdt.h)(0x57BA8FAC)
 I (.\inc\i2s.h)(0x57BA8FAC)
 I (.\inc\lcd.h)(0x57BA8FAC)
-F (.\src\user_adc.c)(0x5964957F)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\user_adc.o --omf_browse .\objects\user_adc.crf --depend .\objects\user_adc.d)
-I (.\inc\user_adc.h)(0x58BD15D7)
+F (.\src\user_adc.c)(0x5982D39C)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\user_adc.o --omf_browse .\objects\user_adc.crf --depend .\objects\user_adc.d)
+I (.\inc\user_adc.h)(0x59819EF5)
 I (.\inc\Nano100Series.h)(0x57BA8FAC)
 I (.\inc\cmsis_inc\core_cm0.h)(0x57BA8FAC)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -193,16 +193,16 @@ I (.\inc\wdt.h)(0x57BA8FAC)
 I (.\inc\wwdt.h)(0x57BA8FAC)
 I (.\inc\i2s.h)(0x57BA8FAC)
 I (.\inc\lcd.h)(0x57BA8FAC)
-I (.\inc\platform.h)(0x58B8DFFD)
+I (.\inc\platform.h)(0x59829701)
 I (.\inc\user_usart.h)(0x58F5AA0F)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
 I (.\inc\w25q64.h)(0x587C7D06)
 I (.\inc\user_spi.h)(0x587C7EE2)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5475F2FE)
-F (.\user\main.c)(0x596C799F)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\user\main.c)(0x5982DE0C)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\inc\app.h)(0x58807247)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (.\inc\platform.h)(0x58B8DFFD)
+I (.\inc\platform.h)(0x59829701)
 I (.\inc\Nano100Series.h)(0x57BA8FAC)
 I (.\inc\cmsis_inc\core_cm0.h)(0x57BA8FAC)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -233,15 +233,15 @@ I (.\inc\wwdt.h)(0x57BA8FAC)
 I (.\inc\i2s.h)(0x57BA8FAC)
 I (.\inc\lcd.h)(0x57BA8FAC)
 I (.\inc\user_usart.h)(0x58F5AA0F)
-I (.\inc\user_adc.h)(0x58BD15D7)
+I (.\inc\user_adc.h)(0x59819EF5)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
 I (.\inc\w25q64.h)(0x587C7D06)
 I (.\inc\user_spi.h)(0x587C7EE2)
 I (D:\Keil_v5\ARM\ARMCC\include\time.h)(0x5475F300)
-F (.\src\app.c)(0x596C2EBC)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\app.o --omf_browse .\objects\app.crf --depend .\objects\app.d)
+F (.\src\app.c)(0x5982D6F5)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\app.o --omf_browse .\objects\app.crf --depend .\objects\app.d)
 I (.\inc\app.h)(0x58807247)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (.\inc\platform.h)(0x58B8DFFD)
+I (.\inc\platform.h)(0x59829701)
 I (.\inc\Nano100Series.h)(0x57BA8FAC)
 I (.\inc\cmsis_inc\core_cm0.h)(0x57BA8FAC)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -272,7 +272,7 @@ I (.\inc\wwdt.h)(0x57BA8FAC)
 I (.\inc\i2s.h)(0x57BA8FAC)
 I (.\inc\lcd.h)(0x57BA8FAC)
 I (.\inc\user_usart.h)(0x58F5AA0F)
-I (.\inc\user_adc.h)(0x58BD15D7)
+I (.\inc\user_adc.h)(0x59819EF5)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
 I (.\inc\w25q64.h)(0x587C7D06)
 I (.\inc\user_spi.h)(0x587C7EE2)

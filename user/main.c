@@ -33,7 +33,7 @@ extern USART_struct SENSOR_usart;
 extern uint16_t flag_detect;
 extern uint8_t u8ADF;
 extern uint16_t flag_poweron;
-
+extern uint8_t IR_co[8];
 
 volatile int32_t   g_bAlarm  = FALSE;
 int main()
@@ -70,7 +70,8 @@ int main()
 #ifdef DEBUG
 		printf("Hello World\nSPIflash ID: %x \r\n",temp);
 #endif
-		power_ADC_convert(p_battery);
+		SPI_Flash_ReadBuffer(IR_co,0x7FD000,8);
+		ADC_convert(p_battery);
 		Delay(1000);
 		
 		RTC_Open(&sCurTime);
@@ -88,7 +89,8 @@ int main()
 	//自检
 	//BT_RST_Pin = 0;//使蓝牙不可以连接
 	//set_bt_name();
-	Self_test();
+	//Self_test();
+		
 	BLE_usart.reset();
 	
 	while(flag_poweron <= 500);

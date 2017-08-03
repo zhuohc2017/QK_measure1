@@ -148,146 +148,34 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>32</LineNumber>
+          <LineNumber>383</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>7380</Address>
+          <Address>9694</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure\src\app.c</Filename>
+          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure1\src\app.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\QKMM_NANO100\src/app.c\383</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>128</LineNumber>
+          <LineNumber>360</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>19334</Address>
+          <Address>9556</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure1\user\main.c</Filename>
+          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure1\src\app.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>94</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>19226</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure1\user\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\QKMM_NANO100\user/main.c\94</Expression>
-        </Bp>
-        <Bp>
-          <Number>3</Number>
-          <Type>0</Type>
-          <LineNumber>804</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>18994</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure\src\platform.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\QKMM_NANO100\src/platform.c\804</Expression>
-        </Bp>
-        <Bp>
-          <Number>4</Number>
-          <Type>0</Type>
-          <LineNumber>582</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>17568</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure\src\platform.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\QKMM_NANO100\src/platform.c\582</Expression>
-        </Bp>
-        <Bp>
-          <Number>5</Number>
-          <Type>0</Type>
-          <LineNumber>590</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>17626</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure\src\platform.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\QKMM_NANO100\src/platform.c\590</Expression>
-        </Bp>
-        <Bp>
-          <Number>6</Number>
-          <Type>0</Type>
-          <LineNumber>597</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>17656</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure\src\platform.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\QKMM_NANO100\src/platform.c\597</Expression>
-        </Bp>
-        <Bp>
-          <Number>7</Number>
-          <Type>0</Type>
-          <LineNumber>606</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>17704</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure\src\platform.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\QKMM_NANO100\src/platform.c\606</Expression>
-        </Bp>
-        <Bp>
-          <Number>8</Number>
-          <Type>0</Type>
-          <LineNumber>608</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>17714</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure\src\platform.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\QKMM_NANO100\src/platform.c\608</Expression>
+          <Expression>\\QKMM_NANO100\src/app.c\360</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>

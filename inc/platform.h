@@ -154,7 +154,7 @@ void select_usart(uint8_t a,uint8_t b,uint8_t c,uint8_t d);
 
 uint8_t set_ID(uint8_t* ID);
 uint8_t set_err(uint8_t *err);
-
+uint8_t set_IR(uint8_t *IR);
 void set_bt_name(void);
 
 uint8_t ADC_convert (uint32_t* value);
