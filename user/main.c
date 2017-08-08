@@ -89,7 +89,7 @@ int main()
 	//自检
 	//BT_RST_Pin = 0;//使蓝牙不可以连接
 	//set_bt_name();
-	//Self_test();
+	Self_test();
 		
 	BLE_usart.reset();
 	
@@ -100,7 +100,7 @@ int main()
   NVIC_DisableIRQ(TMR1_IRQn);
 	TIMER_DisableInt(TIMER1);
 // WDT timeout every 2^14 WDT clock, disable system reset, disable wake up system
-	WDT_Open(WDT_TIMEOUT_2POW16, WDT_RESET_DELAY_1026CLK, TRUE, FALSE);
+	//WDT_Open(WDT_TIMEOUT_2POW16, WDT_RESET_DELAY_1026CLK, TRUE, FALSE);
 	
 	//12   407ms
 	//14   1.638

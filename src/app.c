@@ -91,6 +91,31 @@ void Execute_Cmd(uint8_t *cmd)
 			 end_handle();
 		}
 		break;
+		case 0x03:  //调试用
+		{
+			uint8_t i = 0,rtn[2]={0};
+			if(BLE_usart.receivebuf[1] != 0x1d||BLE_usart.receivebuf[2] != 0x0d)
+			{
+				for(i = 0;i < SIZE_LEN;i++)
+				{
+						BLE_usart.receivebuf[i] =  0;
+				}
+				error_handle();
+				break;
+			}
+			 start_handle();
+			 Delay(1000);
+			 ON_ADC_POW;
+			 ON_D1_POW;
+			 ON_D2_POW;
+			 ON_D3_POW;
+			 ON_D4_POW;
+			 rtn[0] = 0x03;
+			 rtn[1] = 0x24;
+			 Blewrite(rtn,2);
+			 end_handle();
+		}
+		break;
 		case 0x11:
 		{
 				uint8_t num_of_sensor = BLE_usart.receivebuf[1];   //蓝牙接收到的传感器编号
