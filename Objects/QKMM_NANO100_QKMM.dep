@@ -199,7 +199,11 @@ I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
 I (.\inc\w25q64.h)(0x587C7D06)
 I (.\inc\user_spi.h)(0x587C7EE2)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5475F2FE)
+<<<<<<< HEAD
 F (.\user\main.c)(0x59A7CD2F)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+=======
+F (.\user\main.c)(0x59892424)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+>>>>>>> 5e927111228de1b209d42f1d893dc4243a337610
 I (.\inc\app.h)(0x58807247)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (.\inc\platform.h)(0x59829701)
@@ -238,7 +242,11 @@ I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
 I (.\inc\w25q64.h)(0x587C7D06)
 I (.\inc\user_spi.h)(0x587C7EE2)
 I (D:\Keil_v5\ARM\ARMCC\include\time.h)(0x5475F300)
+<<<<<<< HEAD
 F (.\src\app.c)(0x59A7BD47)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\app.o --omf_browse .\objects\app.crf --depend .\objects\app.d)
+=======
+F (.\src\app.c)(0x59883059)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I.\inc -I.\inc\cmsis_inc-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\app.o --omf_browse .\objects\app.crf --depend .\objects\app.d)
+>>>>>>> 5e927111228de1b209d42f1d893dc4243a337610
 I (.\inc\app.h)(0x58807247)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (.\inc\platform.h)(0x59829701)

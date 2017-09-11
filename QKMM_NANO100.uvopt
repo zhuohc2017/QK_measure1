@@ -116,6 +116,14 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
+<<<<<<< HEAD
+=======
+          <Key>DLGUARM</Key>
+          <Name></Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+>>>>>>> 5e927111228de1b209d42f1d893dc4243a337610
           <Key>ARMRTXEVENTFLAGS</Key>
           <Name>-L70 -Z18 -C0 -M0 -T1</Name>
         </SetRegEntry>
@@ -144,41 +152,63 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>291</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>10616</Address>
+=======
+          <LineNumber>80</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>6284</Address>
+>>>>>>> 5e927111228de1b209d42f1d893dc4243a337610
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure1\src\app.c</Filename>
+          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure1\src\user_adc.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>300</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>10706</Address>
+=======
+          <LineNumber>84</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>6360</Address>
+>>>>>>> 5e927111228de1b209d42f1d893dc4243a337610
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
+<<<<<<< HEAD
           <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure1\src\app.c</Filename>
+=======
+          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure1\src\user_adc.c</Filename>
+>>>>>>> 5e927111228de1b209d42f1d893dc4243a337610
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
         <Bp>
           <Number>2</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>77</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>6280</Address>
+=======
+          <LineNumber>90</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>6414</Address>
+>>>>>>> 5e927111228de1b209d42f1d893dc4243a337610
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -192,6 +222,7 @@
         <Bp>
           <Number>3</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>120</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>7822</Address>
@@ -227,15 +258,24 @@
           <LineNumber>125</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>9354</Address>
+=======
+          <LineNumber>94</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>6490</Address>
+>>>>>>> 5e927111228de1b209d42f1d893dc4243a337610
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure1\src\app.c</Filename>
+          <Filename>E:\work\娴嬭窛浠?V1.4.1.0\Change\QK_measure1\src\user_adc.c</Filename>
           <ExecCommand></ExecCommand>
+<<<<<<< HEAD
           <Expression>\\QKMM_NANO100\src/app.c\125</Expression>
+=======
+          <Expression></Expression>
+>>>>>>> 5e927111228de1b209d42f1d893dc4243a337610
         </Bp>
       </Breakpoint>
       <WatchWindow1>
