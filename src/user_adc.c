@@ -77,41 +77,41 @@ uint8_t ADC_convert (uint32_t* value)
 		value[0] = (vol_temp[0]*2000);
 		if(IR_co[0] != 0xFF && IR_co[1] != 0xFF)
 		{
-			value[1] = (uint32_t)(IR_co[0]*pow(vol_temp[1],IR_co[1]/10*(-1)));//(uint32_t)(41.841*pow(vol_temp[2],-5.531));(2)
+			value[1] = (uint32_t)  ((IR_co[0]*pow(vol_temp[1],IR_co[1]/10.0*(-1))) < 24) ? 0 : ((IR_co[0]*pow(vol_temp[1],IR_co[1]/10.0*(-1))) - 24);//(uint32_t)(41.841*pow(vol_temp[2],-5.531));(2)
 		}
 		else
 		{
-			value[1] = (uint32_t)(59.828*pow(vol_temp[1],-1.684));//(uint32_t)(41.841*pow(vol_temp[2],-5.531));(2)
+			value[1] = (uint32_t) ( (40*pow(vol_temp[1],-1.1)) < 24 ) ? 0 : (40*pow(vol_temp[1],-1.1))-24;//(uint32_t)(41.841*pow(vol_temp[2],-5.531));(2)
 		}
 		
 		
 		if(IR_co[2] != 0xFF && IR_co[3] != 0xFF)
 		{
-			value[2] = (uint32_t)(IR_co[2]*pow(vol_temp[2],IR_co[3]/10*(-1)));
+			value[2] = (uint32_t)  ((IR_co[2]*pow(vol_temp[2],IR_co[3]/10.0*(-1))) < 24) ? 0 :  ((IR_co[2]*pow(vol_temp[2],IR_co[3]/10.0*(-1))) - 24);
 		}		
 		else
 		{
-			value[2] = (uint32_t)(60.331*pow(vol_temp[2],-1.686));//(uint32_t)(33.455*pow(vol_temp[1],-4.209));(1)
+			value[2] = (uint32_t)(40*pow(vol_temp[2],-1.1) < 24) ? 0 : (40*pow(vol_temp[2],-1.1) - 24);//(uint32_t)(33.455*pow(vol_temp[1],-4.209));(1)
 		}
 		
 		
 		if(IR_co[4] != 0xFF && IR_co[5] != 0xFF)
 		{
-			value[3] = (uint32_t)(IR_co[4]*pow(vol_temp[3],IR_co[5]/10*(-1)));
+			value[3] = (uint32_t)(IR_co[4]*pow(vol_temp[3],IR_co[5]/10.0*(-1)) < 24) ? 0 : (IR_co[4]*pow(vol_temp[3],IR_co[5]/10.0*(-1)) - 24);
 		}
 		else
 		{
-			value[3] = (uint32_t)(51.773*pow(vol_temp[3],-1.526));//(uint32_t)(27.014*pow(vol_temp[4],-3.974));(4)
+			value[3] = (uint32_t)(51.773*pow(vol_temp[3],-1.526))<24?0:(51.773*pow(vol_temp[3],-1.526)-24);//(uint32_t)(27.014*pow(vol_temp[4],-3.974));(4)
 		}
 		
 		
 		if(IR_co[0] != 0xFF && IR_co[1] != 0xFF)
 		{
-			value[4] = (uint32_t)(IR_co[6]*pow(vol_temp[4],IR_co[7]/10*(-1)));
+			value[4] = (uint32_t) (IR_co[6]*pow(vol_temp[4],IR_co[7]/10.0*(-1))<24)?0:(IR_co[6]*pow(vol_temp[4],IR_co[7]/10.0*(-1))-24);
 		}
 		else
 		{
-			value[4] = (uint32_t)(50.221*pow(vol_temp[4],-1.448));//(uint32_t)(29.569*pow(vol_temp[3],-3.144));(3)
+			value[4] = (uint32_t) (40*pow(vol_temp[4],-1.1))<24?0:(40*pow(vol_temp[4],-1.1)-24);//(uint32_t)(29.569*pow(vol_temp[3],-3.144));(3)
 		}
 		
 		
