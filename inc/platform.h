@@ -80,21 +80,21 @@
 #define ON_ADC_POW			ADC_POW_PIN = 1
 #define OFF_ADC_POW			ADC_POW_PIN = 0
 
-#define ON_D1_POW				N_LS_CTR1_Pin = 0 //低电平有效
+#define ON_D1_POW				N_LS_CTR1_Pin = 1 //低电平有效
 
-#define OFF_D1_POW			N_LS_CTR1_Pin = 1
+#define OFF_D1_POW			N_LS_CTR1_Pin = 0
 
-#define ON_D2_POW				N_LS_CTR2_Pin = 0
+#define ON_D2_POW				N_LS_CTR2_Pin = 1
 
-#define OFF_D2_POW			N_LS_CTR2_Pin = 1
+#define OFF_D2_POW			N_LS_CTR2_Pin = 0
 
-#define ON_D3_POW				N_LS_CTR3_Pin = 0
+#define ON_D3_POW				N_LS_CTR3_Pin = 1
 
-#define OFF_D3_POW			N_LS_CTR3_Pin = 1
+#define OFF_D3_POW			N_LS_CTR3_Pin = 0
 
-#define ON_D4_POW				N_LS_CTR4_Pin = 0
+#define ON_D4_POW				N_LS_CTR4_Pin = 1
 
-#define OFF_D4_POW			N_LS_CTR4_Pin = 1
+#define OFF_D4_POW			N_LS_CTR4_Pin = 0
 
 #define ON_INDI_POW  		INDICATE_POWER_Pin = 1
 #define OFF_INDI_POW 		INDICATE_POWER_Pin = 0

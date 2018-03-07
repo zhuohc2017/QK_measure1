@@ -170,8 +170,8 @@ int main()
 #ifdef DEBUG
 		printf("sleep ---\r\n");
 #endif
-			//Delay(500);
-			enter_stop();
+			Delay(500);
+			//enter_stop();
 		}
 
 		// Reset WDT and clear time out flag
